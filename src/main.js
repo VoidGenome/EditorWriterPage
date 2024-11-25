@@ -16,6 +16,15 @@ const vuetify = createVuetify({
   icons: {
     iconfont: 'mdi',
   },
+  themes: {
+    light: {
+      // Customize the background color
+      dark: false,
+      colors: {
+        background: '#f5f5f5', // Light grey background
+      },
+    },
+  }
 })
 
 createApp(App).use(store).use(router).use(vuetify).mount('#app')
